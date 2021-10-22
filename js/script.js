@@ -63,6 +63,23 @@ for (let anchor of anchors) {
     })
 })
 }
+let parapraphs = document.querySelectorAll('.paragraph');
+let readMoreBtn = document.querySelector('#readMoreBtn');
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (parapraphs.length > 4) {
+        for (let i = 4; i < parapraphs.length; i++) {
+            parapraphs[i].classList.add('hiden');
+        }
+    }
+});
+
+readMoreBtn.addEventListener('click', () => {
+    parapraphs.forEach(item => {
+        item.classList.remove('hiden');
+    });
+    readMoreBtn.style.display = "none";
+});
 
 
 function testWebP(callback) {

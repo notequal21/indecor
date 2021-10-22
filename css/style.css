@@ -661,6 +661,10 @@ h6 {
   margin: 0 0 16px 0;
 }
 
+.about-body__stats-text p.hiden {
+  display: none;
+}
+
 .about-body__stats-text a {
   font-family: Montserrat;
   font-style: normal;
@@ -1201,6 +1205,8 @@ h6 {
 }
 
 .faq-col__form-btn {
+  cursor: pointer;
+  display: block;
   width: 350px;
   height: 60px;
   background: #252525;
@@ -1717,6 +1723,10 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+
+  .boss-body__info {
+    margin: 0;
   }
 }
 
